@@ -369,6 +369,22 @@ h6 {
   .mobile-nav-active .navmenu>ul {
     display: block;
   }
+
+  .lang-switch {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-left: 15px;
+  }
+  .lang-switch button {
+    background: none !important;
+    border: none !important;
+    color: #444444 !important;
+  }
+  .lang-switch button:hover,
+  .lang-switch button.active {
+    color: var(--accent-color) !important;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1305,9 +1321,9 @@ section,
   /* Add your styles here */
 }
 
-.background-img {
+/* .background-img {
   filter: brightness(60%);
-}
+} */
 
 .rental-item {
   object-fit: cover;
@@ -1323,7 +1339,6 @@ section,
   border: 0;
   padding: 20px 50px;
   transition: 0.4s;
-  border-radius: 10px;
 }
 
 .link-button:hover {
@@ -1333,4 +1348,27 @@ section,
 
 .soa-image {
   justify-self: center;
+}
+
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 15px;
+}
+
+.lang-switch button {
+  background: none;
+  border: 1px solid rgba(255,255,255,0.4);
+  color: #fff;
+  font-size: 14px;
+  padding: 2px 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.lang-switch button:hover,
+.lang-switch button.active {
+  background: var(--accent-color);
+  border-color: var(--accent-color);
 }
