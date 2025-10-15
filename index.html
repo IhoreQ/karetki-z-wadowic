@@ -43,8 +43,8 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/karetki-logo-white.png" alt="Karetki z Wadowic"> -->
-        <h1 class="sitename" data-key="site-name">Karetki z Wadowic</h1>
+        <img class="logo" src="assets/img/karetki-logo-white.png" alt="Karetki z Wadowic">
+        <!-- <h1 class="sitename" data-key="site-name">Karetki z Wadowic</h1> -->
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -54,7 +54,7 @@
           <li class="dropdown"><a href="#"><span data-key="services">Usługi</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#rental" data-key="rental">Wypożyczalnia</a></li>
-              <li><a href="#sale" data-key="sale-and-purchase">Sprzedaż i skup</a></li>
+              <li><a target="_blank" href="https://karetkizwadowic.otomoto.pl/inventory" data-key="sale-and-purchase">Sprzedaż i skup</a></li>
               <li><a href="#wrapping" data-key="wrapping">Oklejanie</a></li>
             </ul>
           </li>
@@ -62,6 +62,9 @@
           <li class="lang-switch">
             <button id="pl-btn" onclick="changeLang('pl')">PL</button>
             <button id="en-btn" onclick="changeLang('en')">EN</button>
+            <button id="de-btn" onclick="changeLang('de')">DE</button>
+            <button id="fr-btn" onclick="changeLang('fr')">FR</button>
+            <button id="esp-btn" onclick="changeLang('esp')">ESP</button>
           </li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -941,7 +944,7 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="lang.js"></script>
+  <script src="assets/js/lang.js"></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
